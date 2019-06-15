@@ -7,3 +7,9 @@ node_js:
 branches:
   only:
     - master
+
+deploy:
+  provider: heroku
+  app: "foot-telebot-test"
+  api_key:
+    secure: "d4301049-f626-49ed-bbd4-1b1288f3fe24"
