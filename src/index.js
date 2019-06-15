@@ -12,7 +12,7 @@ helper.logStart()
 
 mongoose.Promise = global.Promise
 mongoose.connect(config.DB_URL, {
-  useMongoClient: true
+  useNewUrlParser: true
 })
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.log(err))
